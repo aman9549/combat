@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportX – Elevate Your Game</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    /* 🎨 Root Colors */
+    :root {
+      --primary-color: #1494b9;       /* Deep Aqua Blue */
+      --primary-color-rgb: 20,148,185;
+
+      --secondary-color: #5da5b4;     /* Muted Teal Blue */
+      --secondary-color-rgb: 93,165,180;
+
+      --accent-color: #7ccae1;        /* Bright Aqua */
+      --accent-color-rgb: 124,202,225;
+
+      --background-color: #b3dbe7;    /* Light Aqua */
+      --background-color-rgb: 179,219,231;
+
+      --surface-color: #8cbebf;       /* Soft Teal Gray */
+      --surface-color-rgb: 140,190,191;
+
+      --text-color: #ffffff;          /* Crisp White */
+      --text-color-rgb: 255,255,255;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--secondary-color);
+      padding: 1.2rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: var(--text-color);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 3rem;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      text-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.5);
+    }
+
+    .hero-text p {
+      margin: 1.2rem 0 2rem;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .cta-btn {
+      background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+      color: var(--text-color);
+      padding: 0.9rem 2rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s;
+      box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.3);
+    }
+
+    .cta-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(var(--primary-color-rgb), 0.6);
+    }
+
+    .hero img {
+      width: 40%;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(var(--accent-color), 0.4);
+    }
+
+    /* Programs Section */
+    .programs {
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .programs h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+
+    .program-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--surface-color);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 0 20px rgba(var(--primary-color-rgb), 0.1);
+      transition: 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      border: 1px solid var(--primary-color);
+      box-shadow: 0 0 25px rgba(var(--primary-color-rgb), 0.3);
+    }
+
+    .card h3 {
+      color: var(--accent-color);
+      margin-bottom: 1rem;
+    }
+
+    /* Stats Section */
+    .stats {
+      background-color: var(--secondary-color);
+      text-align: center;
+      padding: 4rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .stat {
+      color: var(--text-color);
+    }
+
+    .stat h3 {
+      color: var(--primary-color);
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Trainers Section */
+    .trainers {
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+
+    .trainers h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 2rem;
+    }
+
+    .trainer-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .trainer-card {
+      background-color: var(--surface-color);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: 0.3s;
+      box-shadow: 0 0 15px rgba(var(--primary-color-rgb), 0.1);
+    }
+
+    .trainer-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(var(--primary-color-rgb), 0.3);
+    }
+
+    .trainer-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .trainer-info {
+      padding: 1.5rem;
+    }
+
+    .trainer-info h4 {
+      color: var(--accent-color);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 4rem 3rem;
+      text-align: center;
+      background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+      color: var(--background-color);
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">SportX</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Programs</a>
+      <a href="#">Trainers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Train Smarter. Move Faster.</h1>
+      <p>Experience next-gen performance analytics and AI-powered coaching. Push your limits and redefine what’s possible.</p>
+      <button class="cta-btn">Get Started</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=80" alt="Athlete Running">
+  </section>
+
+  <!-- Programs -->
+  <section class="programs">
+    <h2>Our Training Programs</h2>
+    <div class="program-cards">
+      <div class="card">
+        <h3>🏋️ Strength & Power</h3>
+        <p>Build endurance, strength, and explosive power with our tailored training modules designed for every athlete.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Speed & Agility</h3>
+        <p>Sharpen your reflexes, improve reaction time, and master on-field agility using our proven techniques.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Mind & Focus</h3>
+        <p>Develop mental toughness and focus through immersive sports psychology and AI-driven feedback tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stat">
+      <h3>500+</h3>
+      <p>Athletes Trained</p>
+    </div>
+    <div class="stat">
+      <h3>95%</h3>
+      <p>Performance Boost</p>
+    </div>
+    <div class="stat">
+      <h3>20+</h3>
+      <p>Certified Coaches</p>
+    </div>
+    <div class="stat">
+      <h3>10+</h3>
+      <p>Sports Disciplines</p>
+    </div>
+  </section>
+
+  <!-- Trainers -->
+  <section class="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainer-cards">
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07b?auto=format&fit=crop&w=800&q=80" alt="Trainer 1">
+        <div class="trainer-info">
+          <h4>Alex Carter</h4>
+          <p>Head Coach | Strength & Conditioning Expert</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1579758629934-0957d0f2315c?auto=format&fit=crop&w=800&q=80" alt="Trainer 2">
+        <div class="trainer-info">
+          <h4>Sophia Lee</h4>
+          <p>Performance Coach | Mind & Focus Specialist</p>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Trainer 3">
+        <div class="trainer-info">
+          <h4>David Smith</h4>
+          <p>Speed & Agility Coach | Ex-Pro Athlete</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Ready to Elevate Your Game?</h2>
+    <p>Join our elite community of athletes and experience the future of training today. Limited slots available!</p>
+    <button class="cta-btn">Join Now</button>
+  </section>
+
+  <footer>
+    © 2025 SportX. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 200px;
+     font-family: var(--rajdhani-font);
+     height: 10vh;
+}
+
+.logo{
+    color: var(--dark-color);
+   
+}
+
+.logo span{
+    color: var(--primary-color);
+}
+
+.navbar a{
+text-decoration: none;
+font-size: 20px;
+font-weight: 500;
+color:var(--gray-color);
+text-transform: uppercase;
+}
+
+.navbar a:nth-child(1){
+    color: var(--primary-color);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+
+
+.phone-div{
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
