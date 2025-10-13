@@ -1,0 +1,24 @@
+.btn{
+     color: var(--light-color);
+    background: var(--primary-color);
+    text-decoration: none;
+    padding: 15px 40px;
+    font-family: var(--rajdhani-font);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    border-radius: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: fit-content;
+}
+
+.btn-con{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-con.btns{
+    justify-content: start;
+}

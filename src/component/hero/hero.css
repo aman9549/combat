@@ -1,11 +1,12 @@
 .hero-section{
-    min-height: 110vh;
+    min-height: 90vh;
     background:linear-gradient(2deg,rgba(2, 0, 36, 0.447) 0%, rgba(9, 9, 121, 0.413) 22%, rgba(0, 213, 255, 0.323) 100%), url('../../assets/imgi_33_banner-backgroundimage.jpg');
-    background-size: cover;
-    background-position: center bottom;
+    background-size: 100%;
+    background-position: center top;
     display: flex;
     justify-content: center;
     align-items: top;
+   
 }
 
 
