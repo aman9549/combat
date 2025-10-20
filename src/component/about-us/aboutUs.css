@@ -55,3 +55,22 @@
    bottom: 100px;
    left: 20px;
 }
+
+
+@media (max-width:600px){
+
+    .about-section{
+        grid-template-columns: repeat(1, 600px);
+    }
+
+}
+
+
+@media (min-width:600px){
+
+    .about-section{
+        grid-template-columns: repeat(1, 600px);
+        
+    }
+
+}

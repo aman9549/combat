@@ -29,19 +29,6 @@ text-align: center;
     text-transform: uppercase;
 }
 
-.hero-text a{
-    color: var(--light-color);
-    background: var(--primary-color);
-    text-decoration: none;
-    padding: 15px 40px;
-    font-family: var(--rajdhani-font);
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 20px;
-    border-radius: 30px;
-
-}
-
 
 @media (max-width:600px) {
     .hero-text h1{
@@ -50,4 +37,76 @@ text-align: center;
     .hero-text h2{
         font-size: 40px;
     }
+    
+    .hero-section{
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+   
 }
+
+
+@media (min-width:600px) {
+    .hero-text h1{
+        font-size: 20px;
+    }
+    .hero-text h2{
+        font-size: 40px;
+    }
+    
+    .hero-section{
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+   
+}
+
+
+@media (min-width:768px) {
+    .hero-text h1{
+        font-size: 20px;
+    }
+    .hero-text h2{
+       font-size:74px;
+    }
+    
+    .hero-section{
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+
+   
+}
+
+
+@media (min-width:992px) {
+    .hero-text h1{
+        font-size: 20px;
+    }
+    .hero-text h2{
+       font-size:100px;
+    }
+    
+    .hero-section{
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+    }
+   
+}
+
+@media (min-width:1200px){
+     .hero-text h1{
+        font-size: 20px;
+    }
+    .hero-text h2{
+       font-size:120px;
+    }
+}
+
+
