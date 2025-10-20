@@ -1,20 +1,29 @@
+import OurServiceCard from "../../utilities/ourServiceCard/OurServiceCard";
 import Sections from "../../utilities/sections/Sections";
 import "./ourServices.css";
 
 const OurServices = () => {
   return (
     <>
-      <Sections content={
+    <div className="our-service-section">
+
+       <Sections mainHeading={"Our Services"} subHeading={"What We Offer"} content={
         <> 
 
         <div className="our-services-container">
-      <div className="service-card">
-            
-      </div>
+      
+              
+                <OurServiceCard />
+                <OurServiceCard />
+                <OurServiceCard />
+    
         </div>
         </>
         
         } />
+
+    </div>
+     
     </>
   );
 };

@@ -3,17 +3,18 @@
     justify-content: center;
     justify-items: center;
     padding: 70px 0;
-    background-color: #f2faff;
+    /*  */
 }
 
-.sections h2{
+.sections .sections-heading{
      color: var(--primary-color);
     font-family: var(--permanent-font);
     font-size: 20px;
 }
 
-.sections h3{
+.sections .sections-sub-heading{
      color: var(--dark-color);
     font-family: var(--teko-font);
     font-size: 62px;
+    text-transform: uppercase;
 }

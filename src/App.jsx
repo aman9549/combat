@@ -4,6 +4,7 @@ import Footer from './component/footer/Footer'
 import Hero from './component/hero/Hero'
 import Aboutus from './component/about-us/Aboutus'
 import OurServices from './component/ourServices/OurServices'
+import RegisterSection from './component/registerSection/RegisterSection'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
    <Hero />
    <Aboutus />
    <OurServices />
+   <RegisterSection />
    {/* <Footer /> */}
     </>
   )

@@ -1,0 +1,67 @@
+.register-section{
+    background: var(--dark-blue-bg);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+}
+
+.register-section form{
+    display: grid;
+    gap: 30px;
+    justify-items: start;
+}
+
+.sections-sub-heading.color{
+    color: white;
+
+}
+
+.register-left{
+   width: 80%;
+    position: relative;
+
+}
+
+.register-left img{
+    position: absolute;
+    width: 300px;
+    left: 0;
+    bottom: 0;
+}
+
+.register-right{
+    background-image: url('../../assets/imgi_10_contact-rightbackground.jpg');
+      width: 100%;
+      position: relative;
+}
+
+.register-right img{
+position: absolute;
+width: 250px;
+top: -90px;
+left: -60px;
+}
+
+.extra{
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+    margin-left: 200px;
+
+}
+
+.input-gaps{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  gap: 20px; /* space between fields */
+  width: 100%;
+}
+
+.input-gaps .MuiTextField-root {
+  width: 100%
+}
+
+/* Make the last input span both columns */
+.input-gaps .MuiTextField-root:last-child {
+  grid-column: span 2;
+}
