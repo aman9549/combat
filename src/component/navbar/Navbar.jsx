@@ -1,5 +1,7 @@
 import React from 'react'
 import '../navbar/navbar.css'
+import { IoPhonePortraitOutline, IoMenuOutline } from "react-icons/io5";
+
 
 const Navbar = () => {
   return (
@@ -14,9 +16,15 @@ const Navbar = () => {
       <a href=""><li>Contact</li></a>
     </ul>
     <div className="phone-div">
-      <h1>+91 12345678890</h1>
+      <h1> <IoPhonePortraitOutline /> +91 12345678890</h1>
     </div>
 </div>
+
+<div className="menu-icon">
+<IoMenuOutline />
+</div>
+
+
    
    </nav>
   )
