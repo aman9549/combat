@@ -1,0 +1,38 @@
+.activity-card{
+    position: relative;
+    height: 300px;
+    width: 350px;
+    
+}
+
+.activity-card img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+}
+
+.activity-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.653);
+    color: white;
+    visibility: hidden;
+    
+}
+
+.activity-card .activity-text h1{
+    font-family: var(--teko-font);
+
+}
+
+.activity-card p{
+font-family: var(--rajdhani-font);
+}

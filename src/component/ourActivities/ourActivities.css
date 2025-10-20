@@ -1,0 +1,25 @@
+.our-activities-con{
+    
+}
+
+
+.slider-container{
+    width: 95vw;
+    /* position: relative; */
+    /* display: grid; */
+   margin-top: 50px;
+
+}
+
+
+
+.slick-next:before, .slick-prev:before {
+    color: red;
+}
+.center .slick-center .activity-card .activity-text{
+   
+    visibility: initial;
+    -ms-transform: scale(1.08);
+    transform: scale(1.08)
+
+}

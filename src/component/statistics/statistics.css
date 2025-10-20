@@ -1,0 +1,12 @@
+.statistics-section{
+    background-color: #f2faff;
+   padding: 80px 0;
+
+}
+
+.achivements-con{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    text-align: center;
+    gap: 30px;
+  }

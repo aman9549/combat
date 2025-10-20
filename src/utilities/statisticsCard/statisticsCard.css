@@ -1,0 +1,25 @@
+.statis-card{
+    background-color: var(--light-color);
+      padding: 40px 0;
+}
+
+.statis-card h2{
+    font-family: var(--teko-font);
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.statis-card p{
+    font-size: 18px;
+    font-family: var(--rajdhani-font);
+    color: var(--gray-color);
+    font-weight: 500;
+}
+
+.statis-card-icon svg{
+   background-color: var(--primary-color);
+   color: var(--light-color);
+   padding: 10px;
+   font-size: 60px;
+   border-radius: 50%;
+}
