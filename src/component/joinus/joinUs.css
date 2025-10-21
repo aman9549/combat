@@ -12,3 +12,18 @@
 .sections-sub-heading.color{
     color: var(--light-color);
 }
+
+
+@media(max-width:600px){
+    .join-us-section{
+         padding: 90px 50px;
+    }
+}
+
+
+@media(min-width:600px){
+.join-us-section{
+     padding: 90px 50px;
+}
+
+}

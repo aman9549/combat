@@ -23,3 +23,39 @@
    font-size: 60px;
    border-radius: 50%;
 }
+
+
+@media(max-width:600px){
+
+    .statis-card h2{
+        font-size: 26px;
+    }
+
+    .statis-card p{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media(min-width:600px){
+
+    .statis-card h2{
+        font-size: 26px;
+    }
+
+    .statis-card p{
+        font-size: 15px;
+    }
+
+}
+
+@media(min-width:992px){
+       .statis-card h2{
+        font-size: 26px;
+    }
+
+    .statis-card p{
+        font-size: 17px;
+    }
+}

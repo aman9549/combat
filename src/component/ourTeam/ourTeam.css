@@ -4,3 +4,30 @@
     gap: 30px;
 }
 
+
+@media(min-width:600px){
+    
+    .our-team-container{
+         grid-template-columns: repeat(1, 300px);
+    }
+
+}
+
+@media(max-width:600px){
+.our-team-container{
+     grid-template-columns: repeat(1, 300px);
+}
+}
+
+
+@media(min-width:786px){
+    .our-team-container{
+         grid-template-columns: repeat(2, 300px);
+    }
+}
+
+@media(min-width:992px){
+    .our-team-container{
+         grid-template-columns: repeat(3, 300px);
+    }
+}

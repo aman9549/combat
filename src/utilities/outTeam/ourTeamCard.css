@@ -34,3 +34,76 @@ font-family: var(--teko-font);
     padding: 10px;
     border-radius: 50%;
 }
+
+
+@media(max-width:600px){
+.our-team-card h1{
+font-size: 16px;
+
+}
+
+.our-team-card p{
+    font-size: 12px;
+    
+}
+.our-team-card img{
+    border-radius: 50%;
+    width: 150px;
+}
+
+.team-card-icons svg{
+ 
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+
+
+@media(min-width:600px){
+.our-team-card h1{
+font-size: 16px;
+
+}
+
+.our-team-card p{
+    font-size: 12px;
+    
+}
+.our-team-card img{
+    border-radius: 50%;
+    width: 150px;
+}
+
+.team-card-icons svg{
+ 
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+@media(min-width:786px){
+.our-team-card h1{
+font-size: 25px;
+
+}
+
+.our-team-card p{
+    font-size: 17px;
+    
+}
+.our-team-card img{
+    border-radius: 50%;
+    width: 200px;
+}
+
+.team-card-icons svg{
+ 
+    padding: 7px;
+    border-radius: 50%;
+}
+}
+@media(min-width:992px){
+
+}
+@media(min-width:1200px){
+
+}
