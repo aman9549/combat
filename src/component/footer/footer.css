@@ -67,3 +67,39 @@ footer ul{
 .footer .footer-fourth ul li svg{
     font-size: 20px;
 }
+
+
+@media (max-width:600px){
+.footer{
+     grid-template-columns: repeat(1, 250px);
+       justify-content: center;
+}
+}
+
+
+@media (min-width:600px){
+.footer{
+     grid-template-columns: repeat(1, 250px);
+     justify-content: center;
+}
+}
+
+
+@media (min-width:786px){
+.footer{
+     grid-template-columns: repeat(2, 250px);
+}
+}
+
+@media (min-width:992px){
+.footer{
+     grid-template-columns: repeat(3, 250px);
+}
+}
+
+@media (min-width:1200px){
+.footer{
+     grid-template-columns: repeat(4, 250px);
+}
+}
+
