@@ -10,3 +10,50 @@
     text-align: center;
     gap: 30px;
   }
+
+
+  @media(max-width:780px){
+    .statistics-section{
+   padding: 80px 100px;
+
+}
+
+.achivements-con{
+   grid-template-columns: repeat(1, 250px);
+}
+  }
+
+
+  @media(min-width:780px){
+    .statistics-section{
+   padding: 80px 100px;
+
+}
+
+.achivements-con{
+   grid-template-columns: repeat(2, 250px);
+}
+  }
+
+  @media(min-width:992px){
+    .statistics-section{
+   padding: 80px 100px;
+
+}
+
+.achivements-con{
+   grid-template-columns: repeat(3, 250px);
+}
+  }
+
+
+  @media(min-width:1200px){
+    .statistics-section{
+   padding: 80px 100px;
+
+}
+
+.achivements-con{
+   grid-template-columns: repeat(4, 250px);
+}
+  }
