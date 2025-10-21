@@ -1,6 +1,6 @@
 import React from 'react'
 import '../about-us/aboutUs.css'
-import pic1 from '../../assets/imgi_3_about-image1.jpg'
+import pic1 from '../../assets/surfing.jpg'
 import pic2 from '../../assets/imgi_4_about-image2.jpg'
 import pic3 from '../../assets/imgi_5_about-image3.jpg'
 import pic4 from '../../assets/imgi_6_about-image4.jpg'
@@ -11,10 +11,8 @@ const Aboutus = () => {
     <section className="about-section">
       <div className="about-images">
        
-         <img src={pic2} alt="" />
-            <img src={pic4} alt="" />
-              <img src={pic3} alt="" />
-             <img src={pic1} alt="" />
+         <img src={pic1} alt="" />
+          
       
        
         
