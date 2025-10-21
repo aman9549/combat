@@ -18,3 +18,19 @@
     font-size: 62px;
     text-transform: uppercase;
 }
+
+
+@media (max-width:992px){
+    .sections .sections-heading{
+     color: var(--primary-color);
+    font-family: var(--permanent-font);
+    font-size: 14px;
+}
+
+.sections .sections-sub-heading{
+     color: var(--dark-color);
+    font-family: var(--teko-font);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+}
